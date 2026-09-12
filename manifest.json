@@ -1,0 +1,6 @@
+{
+    "name": "Shopping List",
+    "short_name": "Shopping",
+    "start_url": ".",
+    "display": "standalone"
+}

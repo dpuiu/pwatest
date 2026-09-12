@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Shopping List</title>
+
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+<h1>Shopping List</h1>
+
+<input id="item" placeholder="Add item">
+<button onclick="addItem()">Add</button>
+
+<ul id="list"></ul>
+
+<script>
+let items = JSON.parse(localStorage.getItem("shopping")) || [];
+
+function save() {
+    localStorage.setItem("shopping", JSON.stringify(items));
+}
+
+function addItem() {
+    const input = document.getElementById("item");
+
+    if (input.value.trim() === "") return;
+
+    items.push(input.value.trim());
+
+    input.value = "";
+
+    save();
+    show();
+}
+
+function removeItem(index) {
+    items.splice(index, 1);
+
+    save();
+    show();
+}
+
+function show() {
+    const list = document.getElementById("list");
+
+    list.innerHTML = "";
+
+    items.forEach((item, index) => {
+        const li = document.createElement("li");
+
+        li.textContent = item + " ";
+
+        const button = document.createElement("button");
+        button.textContent = "Delete";
+        button.onclick = () => removeItem(index);
+
+        li.appendChild(button);
+        list.appendChild(li);
+    });
+}
+
+show();
+</script>
+
+</body>
+</html>
