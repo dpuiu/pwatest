@@ -1,16 +1,15 @@
 {
-    "name": "Shopping List",
-    "short_name": "Shopping",
-    "start_url": "./",
-    "scope": "./",
-    "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#ffffff",
-    "icons": [
-	{
-	   "src": "/32.png",
-	   "type": "image/png",
-	   "sizes": "32x32"
-	}
-    ]
+  "name": "Shopping List",
+  "short_name": "Shopping",
+  "start_url": "/pwatest/",
+  "scope": "/pwatest/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    { "src": "/pwatest/32.png", "type": "image/png", "sizes": "32x32" },
+    { "src": "/pwatest/128.png","type": "image/png", "sizes": "128x128" },
+    { "src": "/pwatest/192.png","type": "image/png", "sizes": "192x192" },
+    { "src": "/pwatest/512.png","type": "image/png", "sizes": "512x512" }
+  ]
 }
