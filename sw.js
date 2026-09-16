@@ -6,12 +6,12 @@ self.addEventListener("install", event => {
     event.waitUntil(
         caches.open(CACHE).then(cache =>
             cache.addAll([
-                "index.html",
-                "manifest.json",
-                "32.png",
-                "128.png",
-                "192.png",
-                "512.png",
+                "/pwatest/index.html",
+                "/pwatest/manifest.json",
+                "/pwatest/32.png",
+                "/pwatest/128.png",
+                "/pwatest/192.png",
+                "/pwatest/512.png",
             ])
         )
     );
