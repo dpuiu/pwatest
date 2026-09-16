@@ -1,6 +1,8 @@
-const CACHE = "shopping-v2";
+const CACHE = "shopping-v3";
 
 self.addEventListener("install", event => {
+    self.skipWaiting();
+
     event.waitUntil(
         caches.open(CACHE).then(cache =>
             cache.addAll([
@@ -13,6 +15,12 @@ self.addEventListener("install", event => {
                 "./512.png",
             ])
         )
+    );
+});
+
+self.addEventListener("activate", event => {
+    event.waitUntil(
+        self.clients.claim()
     );
 });
 
