@@ -12,7 +12,7 @@
     { "src": "/pwatest/128.webp","type": "image/webp", "sizes": "128x128" },
     { "src": "/pwatest/192.webp","type": "image/webp", "sizes": "192x192" },
     { "src": "/pwatest/512.webp","type": "image/webp", "sizes": "512x512" }
-  ]
+  ],
   "screenshots": [
     { "src": "/pwatest/1280x720.webp","sizes": "1280x720","type": "image/webp","form_factor": "wide" },
     { "src": "/pwatest/390x844.webp", "sizes": "390x844", "type": "image/webp"}

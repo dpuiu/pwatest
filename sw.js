@@ -1,4 +1,4 @@
-const CACHE = "shopping-v10";
+const CACHE = "shopping-v11";
 
 self.addEventListener("install", event => {
     self.skipWaiting();
