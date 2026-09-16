@@ -8,10 +8,10 @@
 #convert  128.png -resize 192x192 192.png
 #convert  128.png -resize 512x512 512.png
 
-#convert  ~/Downloads/image_f9a71258.jpg -resize 32x32 32.png
-#convert  ~/Downloads/image_f9a71258.jpg -resize 128x128 128.png
-#convert  ~/Downloads/image_f9a71258.jpg -resize 192x192 192.png
-#convert  ~/Downloads/image_f9a71258.jpg -resize 512x512 512.png
+convert  ~/Downloads/image_f9a71258.jpg -resize 32x32 32.webp
+convert  ~/Downloads/image_f9a71258.jpg -resize 128x128 128.webp
+convert  ~/Downloads/image_f9a71258.jpg -resize 192x192 192.webp
+convert  ~/Downloads/image_f9a71258.jpg -resize 512x512 512.webp
 
 #convert 32.png 32.webp
 #convert 128.png 128.webp
