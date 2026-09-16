@@ -23,3 +23,5 @@ git add .
 git commit -m 'app update'
 git push
 
+
+sed -i 's|png|webp|g' sw.js index.html manifest.json  sw.js 

@@ -8,10 +8,10 @@ self.addEventListener("install", event => {
             cache.addAll([
                 "/pwatest/index.html",
                 "/pwatest/manifest.json",
-                "/pwatest/32.png",
-                "/pwatest/128.png",
-                "/pwatest/192.png",
-                "/pwatest/512.png",
+                "/pwatest/32.webp",
+                "/pwatest/128.webp",
+                "/pwatest/192.webp",
+                "/pwatest/512.webp",
             ])
         )
     );
