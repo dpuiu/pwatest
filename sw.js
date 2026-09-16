@@ -1,4 +1,4 @@
-const CACHE = "shopping-v9";
+const CACHE = "shopping-v10";
 
 self.addEventListener("install", event => {
     self.skipWaiting();
@@ -12,6 +12,8 @@ self.addEventListener("install", event => {
                 "/pwatest/128.webp",
                 "/pwatest/192.webp",
                 "/pwatest/512.webp",
+		"/pwatest/1280x720.webp",
+		"/pwatest/390x844.webp"
             ])
         )
     );
