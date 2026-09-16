@@ -1,6 +1,7 @@
 {
   "name": "Shopping List",
   "short_name": "Shopping",
+  "id": "/pwatest/",
   "start_url": "/pwatest/",
   "scope": "/pwatest/",
   "display": "standalone",

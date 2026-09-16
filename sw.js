@@ -1,4 +1,4 @@
-const CACHE = "shopping-v6";
+const CACHE = "shopping-v7";
 
 self.addEventListener("install", event => {
     self.skipWaiting();
@@ -6,13 +6,12 @@ self.addEventListener("install", event => {
     event.waitUntil(
         caches.open(CACHE).then(cache =>
             cache.addAll([
-                "./",
-                "./index.html",
-                "./manifest.json",
-                "./32.png",
-                "./128.png",
-                "./192.png",
-                "./512.png",
+                "index.html",
+                "manifest.json",
+                "32.png",
+                "128.png",
+                "192.png",
+                "512.png",
             ])
         )
     );
